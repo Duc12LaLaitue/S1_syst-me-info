@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projet L1 - ISI</title>
+    
+
+    <script src="js/gestionFormulaire.js" defer></script>
+    <style src="css/style.css"></style>
 </head>
 <body>
-    
+    <h1>BDD</h1>
+    <!-- En utilisant : https://www.w3schools.com/html/html_forms.asp -->
+    <!-- 
+    On peut créer un formulaire minimaliste pour éxecuter des requêtes SQL.
+    Pour votre formulaire, imaginez au minimum trois requêtes de type « select » que l'on puisse
+adresser à la base de données, exemple: 
+    + SELECT name FROM products
+    + SELECT ...
+    + SELECT ...
+    -->
+
+    <!-- En observant le fichier js/gestionFormaulaire.js on peut constater que:
+        + le formulaire doit avoir pour classe "formulairePourBDEtudiant" et pour nom "formulaire"?
+        + la zone de texte pour nom "requete"
+        + on doit avoir un conteneur avec pour classe "affichageDesErreurs"
+        + on doit avoir un conteneur avec pour classe "affichageBD" dans lequel on aura une balise table vide
+    -->
+    <form action="" method="" name="..." class="...">
+        <label for="textbox_input">Requête SQL:</label>
+        <input id="textbox_input" type="text" name="..." value="">
+        <input type="submit">
+    </form>
+    <article class="..." style ="border:1px">
+        <style>
+            table, th, td {
+              border:1px solid black;
+            }
+        </style>
+        <h4>Résultats:</h4>
+        <table style="width:100%">
+            <tr>
+              <th>Pain</th>
+              <th>Crudités</th>
+              <th>Sauce</th>
+              <th>Supplément</th>
+            </tr>
+            <tr>
+              <td>Galette</td>
+              <td>Salade, Tomate, Oignons</td>
+              <td>Samouraï</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Naan</td>
+              <td>Salade tomate</td>
+              <td>Blanche</td>
+              <td>Cheddar</td>
+            </tr>
+          </table>
+    </article>
+    <article class="...">
+        <h4>Erreurs:</h4><br>
+
+    </article>
 </body>
 </html>
